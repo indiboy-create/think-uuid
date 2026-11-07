@@ -1,0 +1,50 @@
+{
+    "name": "youvision/think-uuid",
+    "description": "ThinkPHP 8 的 UUID 生成与解析组件，基于 ramsey/uuid",
+    "keywords": [
+        "thinkphp",
+        "think-uuid",
+        "uuid",
+        "ramsey"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "youvision"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ramsey/uuid": "^4.7",
+        "topthink/framework": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6 || ^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YouVision\\ThinkUuid\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YouVision\\ThinkUuid\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "YouVision\\ThinkUuid\\Service"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
